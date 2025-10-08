@@ -16,9 +16,8 @@ export function NavBar() {
   }, []);
 
   return (
-    <nav className="w-screen max-w-screen flex items-center justify-between mb-4 relative px-4">
-      <div className=""></div>
-      <div className=" ">
+    <nav className="w-screen max-w-screen flex justify-center mb-4 relative px-4">
+      <div className=" flex gap-6 py-4 items-center bg-gray-800">
         {!isMobile && (
           <>
             <Link href="/" className="text-[#444444] font-medium no-underline">
