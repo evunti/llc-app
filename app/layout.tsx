@@ -9,6 +9,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <div
+          style={{
+            width: "100vw",
+            height: 600,
+            color: "#444",
+            fontSize: 18,
+            textAlign: "center",
+            backgroundImage: "url('/images/cover.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: 0,
+          }}
+        ></div>
         <NavBar />
         {children}{" "}
       </body>
