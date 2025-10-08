@@ -1,4 +1,5 @@
-import "./globals.css";
+import "/app/globals.css";
+import { NavBar } from "./components/navbar";
 
 export default function RootLayout({
   children,
@@ -7,13 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen flex flex-col space-between">
-        <nav className="absolute top-0 right-0 mt-6 mr-8 flex gap-6 items-end">
-          <div>About</div>
-          <div>Gallery</div>
-          <div>Contact</div>
-        </nav>
-        <div className="flex-1">{children}</div>
+      <body>
+        <NavBar />
+        {children}{" "}
       </body>
       <footer className="w-full flex justify-center items-center py-6 text-center gap-1.5">
         &copy; {new Date().getFullYear()} LLC <p>|</p>
