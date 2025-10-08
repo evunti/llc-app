@@ -15,7 +15,7 @@ export default function RootLayout({
       <footer className="w-full flex justify-center items-center py-6 text-center gap-1.5">
         &copy; {new Date().getFullYear()} LLC <p>|</p>
         <a
-          href="https://instagram.com/zhenya.untilova"
+          href="https://www.instagram.com/glr_solution/"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-2 underline"
@@ -24,7 +24,7 @@ export default function RootLayout({
         </a>{" "}
         <p>|</p>
         <a
-          href="https://instagram.com/zhenya.untilova"
+          href="https://www.instagram.com/glr_solution/"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-2 underline"
