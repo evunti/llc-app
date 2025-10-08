@@ -13,10 +13,7 @@ export default function RootLayout({
           style={{
             width: "100vw",
             height: 600,
-            color: "#444",
-            fontSize: 18,
-            textAlign: "center",
-            backgroundImage: "url('/images/cover.png')",
+            backgroundImage: "url(/images/cover.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
