@@ -3,8 +3,8 @@ import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
 import { schema } from "./schemaTypes";
 
-const projectId: string = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "";
-const dataset: string = process.env.NEXT_PUBLIC_SANITY_DATASET || "";
+const projectId: string = "3y5ef4tp";
+const dataset: string = "production";
 
 export default defineConfig({
   basePath: "/studio",
