@@ -8,23 +8,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div
-          style={{
-            width: "100vw",
-            height: 600,
-            backgroundImage: "url(/images/cover.png)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: 0,
-          }}
-        ></div>
-        <NavBar />
-        {children}{" "}
+      <body className="relative">
+        <div className="max-w-[1920px] mx-auto">
+          <div
+            className="w-full h-[600px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+            style={{ backgroundImage: "url(/images/cover.png)" }}
+          ></div>
+          <div className="relative">
+            <img
+              src="/images/circle.png"
+              alt="Circle"
+              className="absolute -top-60 -left-0 w-[200px] h-[200px] sm:w-[450px] sm:h-[450px] z-40 pointer-events-none"
+              style={{ objectFit: "cover" }}
+            />
+            <NavBar />
+          </div>
+          {children}
+        </div>
       </body>
       <footer className="w-full flex justify-center items-center py-6 text-center gap-1.5">
         &copy; {new Date().getFullYear()} LLC <p>|</p>
