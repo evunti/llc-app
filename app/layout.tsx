@@ -8,13 +8,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative">
-        <div className="max-w-[1920px] mx-auto">
-          <div
-            className="w-full h-[600px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
-            style={{ backgroundImage: "url(/images/cover.png)" }}
-          ></div>
-          <div className="relative">
+      <body className="max-w-[1500px] mx-auto w-full m-0 p-0">
+        <div className="w-full flex flex-col items-center mx-auto">
+          <div className="w-full flex items-center justify-center mx-auto">
+            <img
+              src="/images/cover.png"
+              alt="Cover"
+              className="w-full object-contain object-center"
+              style={{ maxWidth: "1500px", maxHeight: "600px" }}
+            />
+          </div>
+          <div className="relative w-full flex items-center justify-center mx-auto max-w-[1500px]">
             <img
               src="/images/circle.png"
               alt="Circle"
@@ -23,7 +27,9 @@ export default function RootLayout({
             />
             <NavBar />
           </div>
-          {children}
+          <div className="w-full flex flex-col items-center justify-center mx-auto">
+            {children}
+          </div>
         </div>
       </body>
       <footer className="w-full flex justify-center items-center py-6 text-center gap-1.5">
