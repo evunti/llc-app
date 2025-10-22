@@ -2,20 +2,66 @@
 
 export default function Services() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-3xl font-bold mb-4">Our Services</h1>
-        <p className="max-w-2xl mb-4">We proudly offer professional leather and upholstery repair for vehicles, furniture, and more, including:</p>
-        <ul className="list-disc pl-6 max-w-2xl space-y-2">
-          <li><strong>Crack and Tear Repair</strong> – Smooth, invisible fixes for splits, scuffs, and punctures.</li>
-          <li><strong>Color Restoration and Re-Dyeing</strong> – Refresh faded or worn leather with perfectly matched color.</li>
-          <li><strong>Reupholstery Services</strong> – Replace worn-out or damaged fabric and leather with precision craftsmanship.</li>
-          <li><strong>Surface Refinishing</strong> – Repair and refinish leather for a consistent, factory-quality appearance.</li>
-          <li><strong>Cleaning and Conditioning</strong> – Deep clean and protect your materials to extend their life.</li>
-        </ul>
-        <p className="max-w-2xl mt-4">Whether it’s a cherished family armchair or your car’s leather seats, we deliver exceptional results that restore both function and style.</p>
+    <div className="font-sans min-h-screen bg-white p-8 pb-20 sm:p-20 flex flex-col items-center justify-center">
+      <main className="w-full max-w-4xl flex flex-col items-center">
+        <h1 className="text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
+          Our Services
+        </h1>
+        <div className="h-0.5 w-16 bg-[#cda632] mx-auto mb-8"></div>
+        <p className="max-w-2xl mb-8 text-lg text-center text-gray-700">
+          We proudly offer professional leather and upholstery repair for
+          vehicles, furniture, and more, including:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-8">
+          <div className="bg-white rounded border border-gray-200 p-6 flex flex-col items-start">
+            <h2 className="text-xl font-bold mb-2 text-[#2a2b2b]">
+              Crack and Tear Repair
+            </h2>
+            <p className="text-[#cda632]">
+              Smooth, invisible fixes for splits, scuffs, and punctures.
+            </p>
+          </div>
+          <div className="bg-white rounded border border-gray-200 p-6 flex flex-col items-start">
+            <h2 className="text-xl font-bold mb-2 text-[#2a2b2b]">
+              Color Restoration and Re-Dyeing
+            </h2>
+            <p className="text-[#cda632]">
+              Refresh faded or worn leather with perfectly matched color.
+            </p>
+          </div>
+          <div className="bg-white rounded border border-gray-200 p-6 flex flex-col items-start">
+            <h2 className="text-xl font-bold mb-2 text-[#2a2b2b]">
+              Reupholstery Services
+            </h2>
+            <p className="text-[#cda632]">
+              Replace worn-out or damaged fabric and leather with precision
+              craftsmanship.
+            </p>
+          </div>
+          <div className="bg-white rounded border border-gray-200 p-6 flex flex-col items-start">
+            <h2 className="text-xl font-bold mb-2 text-[#2a2b2b]">
+              Surface Refinishing
+            </h2>
+            <p className="text-[#cda632]">
+              Repair and refinish leather for a consistent, factory-quality
+              appearance.
+            </p>
+          </div>
+          <div className="bg-white rounded border border-gray-200 p-6 flex flex-col items-start md:col-span-2">
+            <h2 className="text-xl font-bold mb-2 text-[#2a2b2b]">
+              Cleaning and Conditioning
+            </h2>
+            <p className="text-[#cda632]">
+              Deep clean and protect your materials to extend their life.
+            </p>
+          </div>
+        </div>
+        <p className="max-w-2xl text-center text-gray-700 text-lg">
+          Whether it’s a cherished family armchair or your car’s leather seats,
+          we deliver exceptional results that restore both function and style.
+        </p>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
+      <footer className="mt-12 flex gap-[24px] flex-wrap items-center justify-center"></footer>
     </div>
   );
 }
