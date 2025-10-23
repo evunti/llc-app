@@ -10,15 +10,15 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#ededed] min-h-screen w-full m-0 p-0">
         <div className="w-full flex flex-col items-center mx-auto">
-          <div className="w-full flex items-center justify-center mx-auto">
+          <div className="flex items-center justify-center mx-auto" style={{ width: "1440px" }}>
             <img
               src="/images/cover.png"
               alt="Cover"
-              className="w-full object-contain object-center"
-              style={{ maxWidth: "1500px", maxHeight: "600px" }}
+              className="object-contain object-center w-full"
+              style={{ width: "1440px", maxHeight: "600px" }}
             />
           </div>
-          <div className="relative w-full flex items-center justify-center mx-auto max-w-[1500px]">
+          <div className="relative flex items-center justify-center mx-auto" style={{ width: "1440px" }}>
             <img
               src="/images/circle.png"
               alt="Circle"
@@ -27,15 +27,15 @@ export default function RootLayout({
             />
             <NavBar />
           </div>
-          <div className="w-full flex flex-col items-center justify-center mx-auto">
-            <div className="bg-white w-full max-w-[1500px] shadow-md p-4 sm:p-8 min-h-[400px] mx-auto">
+          <div className="flex flex-col items-center justify-center mx-auto" style={{ width: "1440px" }}>
+            <div className="bg-white w-full shadow-md p-4 sm:p-8 min-h-[400px] mx-auto" style={{ width: "1440px" }}>
               {children}
             </div>
           </div>
         </div>
       </body>
-      <div className="w-full flex justify-center items-center py-4">
-        <div className="w-full max-w-md text-center">
+  <div className="flex justify-center items-center py-4 mx-auto" style={{ width: "1440px" }}>
+  <div className="w-full max-w-md text-center mx-auto">
           <p className="text-base text-gray-800 font-semibold mb-0.5">
             Contact Us
           </p>
@@ -46,7 +46,7 @@ export default function RootLayout({
           </p>
         </div>
       </div>
-      <footer className="w-full flex justify-center items-center py-6 text-center gap-1.5">
+  <footer className="flex justify-center items-center py-6 text-center gap-1.5 mx-auto" style={{ width: "1440px" }}>
         &copy; {new Date().getFullYear()} LLC <p>|</p>
         <a
           href="https://www.instagram.com/glr_solution/"
