@@ -16,7 +16,7 @@ export function NavBar() {
 
   return (
     <nav className="w-full flex justify-center mb-2 relative px-0 z-20">
-  <div className="w-full flex items-center justify-center relative min-h-[32px] bg-[#2a2b2b]/95 md:border-b-2 md:shadow-sm">
+      <div className="w-full flex items-center justify-center relative min-h-[32px] bg-[#2a2b2b]/95 md:border-b-2 md:shadow-sm">
         {/* Desktop nav */}
         <div className="hidden md:flex gap-1 py-0.5 sm:gap-2 sm:py-1">
           <Link
