@@ -40,7 +40,7 @@ export default function RootLayout({
 
           <span className="text-base text-gray-800"></span>
           <p className="text-base text-gray-800 font-medium  ">
-            Email us at info@glrsolution.com or Call at (555) 123-4567
+            Email us at info@glrsolution.com or Call (555) 123-4567
           </p>
         </div>
       </div>
