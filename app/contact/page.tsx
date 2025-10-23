@@ -9,12 +9,12 @@ export default function Contact() {
           Ready to restore your furniture or vehicle interior?
         </p>
         <p className="text-center max-w-2xl">
-          Contact <span className="font-semibold">GRL Solution</span> in
+          Contact <span className="font-semibold">GLR Solution</span> in
           Harrisonburg, VA today for a free quote and see why our customers
           trust us for their leather repair and reupholstery needs.
         </p>
         <a
-          href="mailto:info@grlsolution.com"
+          href="mailto:info@glrsolution.com"
           className="mt-4 px-6 py-3 bg-[#2a2b2b] text-white rounded shadow hover:bg-[#444] transition"
         >
           Email Us
