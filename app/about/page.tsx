@@ -5,7 +5,7 @@ export default function About() {
     <div className="font-sans min-h-screen bg-white p-8 pb-20 sm:p-20 flex flex-col items-center justify-center">
       <main className="w-full max-w-3xl flex flex-col items-center">
         <h1 className="text-4xl font-extrabold text-[#2a2b2b] mb-2 text-center tracking-tight uppercase">
-          Why Choose GRL Solution
+          Why Choose GLR Solution
         </h1>
         <div className="h-0.5 w-20 bg-[#cda632] mx-auto mb-8"></div>
         <div className="bg-white border border-gray-200 rounded p-8 shadow-sm w-full">
