@@ -29,6 +29,7 @@ export default function About() {
           </p>
         </div>
       </main>
+      {/* Contact info now in layout */}
       <footer className="mt-8 sm:mt-12 flex gap-[24px] flex-wrap items-center justify-center"></footer>
     </div>
   );
