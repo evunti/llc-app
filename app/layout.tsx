@@ -22,7 +22,7 @@ export default function RootLayout({
             <img
               src="/images/circle.png"
               alt="Circle"
-              className="absolute -top-60 -left-0 w-[200px] h-[200px] sm:w-[450px] sm:h-[450px] z-40 pointer-events-none"
+              className="hidden sm:block absolute -top-60 -left-0 w-[200px] h-[200px] sm:w-[450px] sm:h-[450px] z-40 pointer-events-none"
               style={{ objectFit: "cover" }}
             />
             <NavBar />
