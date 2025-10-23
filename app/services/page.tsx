@@ -3,7 +3,7 @@
 export default function Services() {
   return (
     <div className="font-sans min-h-screen bg-white p-4 pb-12 sm:p-20 flex flex-col items-center justify-center">
-      <main className="w-full max-w-4xl flex flex-col items-center">
+      <main className="w-full max-w-6xl flex flex-col items-center">
         <h1 className="text-2xl sm:text-4xl font-extrabold text-gray-900 mb-2 text-center tracking-tight">
           Our Services
         </h1>
