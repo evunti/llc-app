@@ -32,6 +32,18 @@ export default function RootLayout({
           </div>
         </div>
       </body>
+      <div className="w-full flex justify-center items-center py-4">
+        <div className="w-full max-w-md text-center">
+          <p className="text-base text-gray-800 font-semibold mb-0.5">
+            Contact Us
+          </p>
+
+          <span className="text-base text-gray-800"></span>
+          <p className="text-base text-gray-800 font-medium  ">
+            Email us at info@glrsolution.com or Call at (555) 123-4567
+          </p>
+        </div>
+      </div>
       <footer className="w-full flex justify-center items-center py-6 text-center gap-1.5">
         &copy; {new Date().getFullYear()} LLC <p>|</p>
         <a

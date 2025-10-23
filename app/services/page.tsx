@@ -61,6 +61,7 @@ export default function Services() {
           we deliver exceptional results that restore both function and style.
         </p>
       </main>
+      {/* Contact info now in layout */}
       <footer className="mt-8 sm:mt-12 flex gap-[24px] flex-wrap items-center justify-center"></footer>
     </div>
   );
