@@ -17,22 +17,37 @@ export function NavBar() {
 
   return (
     <nav className="w-full flex justify-center mb-4 relative px-0">
-      <div className="w-full flex gap-6 py-4 items-center bg-[#2a2b2b] justify-center">
+      <div className="w-full flex gap-2 py-1 sm:gap-4 sm:py-2 items-center bg-[#2a2b2b]/90 justify-center">
         {!isMobile && (
           <>
-            <Link href="/" className="text-[#FFF5EE] no-underline">
+            <Link
+              href="/"
+              className="text-[#FFF5EE] no-underline text-sm sm:text-base"
+            >
               Home
             </Link>
-            <Link href="/services" className="text-[#FFF5EE]  no-underline">
+            <Link
+              href="/services"
+              className="text-[#FFF5EE]  no-underline text-sm sm:text-base"
+            >
               Services
             </Link>
-            <Link href="/gallery" className="text-[#FFF5EE]  no-underline">
+            <Link
+              href="/gallery"
+              className="text-[#FFF5EE]  no-underline text-sm sm:text-base"
+            >
               Gallery
             </Link>
-            <Link href="/about" className="text-[#FFF5EE]  no-underline">
+            <Link
+              href="/about"
+              className="text-[#FFF5EE]  no-underline text-sm sm:text-base"
+            >
               About Us
             </Link>
-            <Link href="/testimonials" className="text-[#FFF5EE] no-underline">
+            <Link
+              href="/testimonials"
+              className="text-[#FFF5EE] no-underline text-sm sm:text-base"
+            >
               Testimonials
             </Link>
           </>
