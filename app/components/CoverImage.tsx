@@ -1,11 +1,13 @@
 import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 // Update the import path below if your sanityClient file is located elsewhere
+
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { client } from "../../sanityClient"; // Adjust path as needed
 
 const builder = imageUrlBuilder(client);
 
-function urlFor(source: any) {
+function urlFor(source: SanityImageSource) {
   return builder
     .image(source)
     .width(1200) // default width, adjust as needed
@@ -15,7 +17,7 @@ function urlFor(source: any) {
 }
 
 interface CoverImageProps {
-  image: any; // Replace 'any' with a more specific type if available
+  image: SanityImageSource;
   alt?: string;
   className?: string;
   priority?: boolean;
