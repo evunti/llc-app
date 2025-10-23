@@ -1,26 +1,25 @@
 export default function Contact() {
   return (
-    <div className=" flex justify-items-center min-h-screen p-4 pb-16 gap-8 sm:p-15 font-sans">
-      <main className="flex flex-col gap-[10px] row-start-2 items-center">
+    <div className="min-h-screen flex items-center justify-center p-4 pb-16 font-sans">
+      <main className="flex flex-col gap-4 w-full max-w-md mx-auto items-center bg-white border border-gray-200 rounded p-4 sm:p-8 shadow-sm">
         <h1 className="text-2xl text-center text-gray-700 font-bold">
           Request a Free Estimate
         </h1>
         <p className="text-lg text-center">
           Ready to restore your furniture or vehicle interior?
         </p>
-        <p className="text-center max-w-2xl">
+        <p className="text-center max-w-xs sm:max-w-md">
           Contact <span className="font-semibold">GLR Solution</span> in
           Harrisonburg, VA today for a free quote and see why our customers
           trust us for their leather repair and reupholstery needs.
         </p>
         <a
           href="mailto:info@glrsolution.com"
-          className="mt-4 px-6 py-3 bg-[#2a2b2b] text-white rounded shadow hover:bg-[#444] transition"
+          className="mt-4 px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base bg-[#2a2b2b] text-white rounded shadow hover:bg-[#444] transition"
         >
           Email Us
         </a>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
     </div>
   );
 }
