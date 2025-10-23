@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-w-[1500px] mx-auto w-full m-0 p-0">
+      <body className="bg-[#ededed] min-h-screen w-full m-0 p-0">
         <div className="w-full flex flex-col items-center mx-auto">
           <div className="w-full flex items-center justify-center mx-auto">
             <img
@@ -28,7 +28,9 @@ export default function RootLayout({
             <NavBar />
           </div>
           <div className="w-full flex flex-col items-center justify-center mx-auto">
-            {children}
+            <div className="bg-white w-full max-w-[1500px] shadow-md p-4 sm:p-8 min-h-[400px] mx-auto">
+              {children}
+            </div>
           </div>
         </div>
       </body>
