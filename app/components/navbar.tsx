@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 export function NavBar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Detect mobile with window.matchMedia
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -17,17 +16,16 @@ export function NavBar() {
   return (
     <nav className="w-full flex justify-center mb-2 relative px-0 z-20">
       <div className="w-full flex items-center justify-center relative min-h-[26px] py-2 md:py-3 bg-[#2a2b2b]/95 md:border-b-2 md:shadow-sm">
-        {/* Desktop nav (now visible on mobile) */}
-        <div className="hidden md:flex gap-2 py-1 sm:gap-3 sm:py-1.5">
+        <div className="hidden md:flex justify-around gap-6 ">
           <Link
             href="/"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             About Us
           </Link>
@@ -40,18 +38,18 @@ export function NavBar() {
 
           <Link
             href="/gallery"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             Gallery
           </Link>
           <Link
             href="/contact"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             Contact Us
           </Link>
         </div>
-        {/* Mobile hamburger hidden when showing desktop links */}
+
         <div className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 items-center h-full">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -75,7 +73,7 @@ export function NavBar() {
         {/* Mobile dropdown */}
         {/* Mobile dropdown (simplified) */}
         {dropdownOpen && isMobile && (
-          <div className="absolute top-full right-2 w-48 bg-[#2a2b2b]/95 border border-[#444] shadow-lg z-30 flex flex-col items-stretch rounded-md overflow-hidden animate-fade-in">
+          <div className="absolute top-full left-0 right-0 w-full bg-[#2a2b2b]/95 border-t border-[#444] shadow-lg z-30 flex flex-col items-stretch overflow-hidden animate-fade-in">
             <Link
               href="/"
               className="block w-full px-4 py-3 text-[#FFF5EE] text-sm text-left border-b border-[#444] font-semibold"
@@ -96,6 +94,14 @@ export function NavBar() {
               onClick={() => setDropdownOpen(false)}
             >
               About
+            </Link>
+            <div className="w-full border-t border-[#444]" />
+            <Link
+              href="/contact"
+              className="block w-full px-4 py-3 text-[#FFF5EE] text-sm text-left font-semibold"
+              onClick={() => setDropdownOpen(false)}
+            >
+              Contact Us
             </Link>
           </div>
         )}

@@ -13,12 +13,12 @@ export default function RootLayout({
           <NavBar />
 
           <div className="w-full flex justify-center mt-2 mb-2">
-            <div className="w-full max-w-[820px] flex items-center justify-between px-4">
+            <div className="w-full max-w-[820px] flex flex-col sm:flex-row items-center sm:items-center justify-between px-4 gap-2">
               <div className="flex items-center gap-3">
                 <img
                   src="/images/circle.png"
                   alt="Circle"
-                  className="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] pointer-events-none"
+                  className="hidden sm:block w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] pointer-events-none"
                   style={{ objectFit: "cover" }}
                 />
                 <div className="flex flex-col">
