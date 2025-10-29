@@ -15,7 +15,7 @@ export default function RootLayout({
               <img
                 src="/images/cover.png"
                 alt="Cover"
-                className="w-full object-cover object-center h-[38vh] sm:h-[48vh] md:h-[56vh]"
+                className="w-full object-cover object-top h-[28vh] sm:h-[48vh] md:h-[56vh]"
               />
               <div
                 className="absolute right-3 bottom-3 sm:right-6 sm:bottom-6 bg-[#cda632]/70 text-[#171717] px-2 py-1 z-50 rounded-md shadow-sm max-w-[140px] sm:max-w-[220px]"
