@@ -18,7 +18,7 @@ export default function RootLayout({
                 className="w-full object-cover object-center h-[38vh] sm:h-[48vh] md:h-[56vh]"
               />
               <div
-                className="absolute right-4 bottom-4 sm:right-8 sm:bottom-8 bg-[#cda632]/60 text-[#171717] px-3 sm:px-6 py-2 sm:py-3 z-50 rounded-md shadow-sm"
+                className="absolute right-8 bottom-4 sm:right-10 sm:bottom-8 bg-[#cda632]/60 text-[#171717] px-3 sm:px-6 py-2 sm:py-3 z-50 rounded-md shadow-sm"
                 style={{
                   backdropFilter: "saturate(110%) blur(1px)",
                   background:
