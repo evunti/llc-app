@@ -17,8 +17,8 @@ export function NavBar() {
   return (
     <nav className="w-full flex justify-center mb-2 relative px-0 z-20">
       <div className="w-full flex items-center justify-center relative min-h-[20px] bg-[#2a2b2b]/95 md:border-b-2 md:shadow-sm">
-        {/* Desktop nav */}
-        <div className="hidden md:flex gap-1 py-0 sm:gap-2 sm:py-0.5">
+  {/* Desktop nav (now visible on mobile) */}
+  <div className="flex gap-1 py-0 sm:gap-2 sm:py-0.5">
           <Link
             href="/"
             className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
@@ -50,8 +50,8 @@ export function NavBar() {
             Testimonials
           </Link>
         </div>
-        {/* Mobile hamburger only, top right, no bg or border */}
-        <div className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 flex items-center h-full">
+  {/* Mobile hamburger hidden when showing desktop links */}
+  <div className="hidden absolute right-2 top-1/2 -translate-y-1/2 items-center h-full">
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
             className="bg-none border-none cursor-pointer p-0 flex flex-col justify-center items-center w-7 h-7"

@@ -18,17 +18,17 @@ export default function RootLayout({
                 className="w-full object-cover object-center h-[38vh] sm:h-[48vh] md:h-[56vh]"
               />
               <div
-                className="absolute right-8 bottom-4 sm:right-10 sm:bottom-8 bg-[#cda632]/60 text-[#171717] px-3 sm:px-6 py-2 sm:py-3 z-50 rounded-md shadow-sm"
+                className="absolute right-8 bottom-4 sm:right-10 sm:bottom-8 bg-[#cda632]/60 text-[#171717] px-2 sm:px-6 py-1 sm:py-3 z-50 rounded-md shadow-sm max-w-[220px] sm:max-w-none"
                 style={{
                   backdropFilter: "saturate(110%) blur(1px)",
                   background:
                     "linear-gradient(180deg, rgba(205,166,50,0.6), rgba(184,134,42,0.6))",
                 }}
               >
-                <div className="font-extrabold text-sm sm:text-lg leading-tight">
+                <div className="font-extrabold text-xs sm:text-lg leading-tight">
                   GLR Solution
                 </div>
-                <div className="text-xs sm:text-sm leading-tight">
+                <div className="text-[10px] sm:text-sm leading-tight">
                   Leather Furniture Repair & Reupholstry
                 </div>
               </div>
@@ -39,7 +39,7 @@ export default function RootLayout({
               <img
                 src="/images/circle.png"
                 alt="Circle"
-                className="hidden sm:block absolute sm:left-6 sm:top-[-260px] sm:w-[240px] sm:h-[240px] md:left-10 md:w-[320px] md:h-[320px] lg:left-14 lg:w-[400px] lg:h-[400px] z-60 pointer-events-none"
+                className="hidden sm:block absolute left-2 top-[-120px] w-[140px] h-[140px] sm:left-6 sm:top-[-260px] sm:w-[240px] sm:h-[240px] md:left-10 md:w-[320px] md:h-[320px] lg:left-14 lg:w-[400px] lg:h-[400px] z-60 pointer-events-none"
                 style={{ objectFit: "cover" }}
               />
               <div className="w-full">
