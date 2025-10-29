@@ -44,11 +44,11 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="relative w-full overflow-hidden">
+          <div className="relative w-full">
             <img
               src="/images/cover.png"
               alt="Cover"
-              className="w-full object-cover object-top h-[28vh] sm:h-[48vh] md:h-[56vh]"
+              className="w-full object-contain object-top h-auto max-h-screen"
             />
           </div>
 
