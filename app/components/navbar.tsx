@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 export function NavBar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Detect mobile with window.matchMedia
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -17,17 +16,16 @@ export function NavBar() {
   return (
     <nav className="w-full flex justify-center mb-2 relative px-0 z-20">
       <div className="w-full flex items-center justify-center relative min-h-[26px] py-2 md:py-3 bg-[#2a2b2b]/95 md:border-b-2 md:shadow-sm">
-        {/* Desktop nav (now visible on mobile) */}
-        <div className="hidden md:flex gap-2 py-1 sm:gap-3 sm:py-1.5">
+        <div className="flex justify-around gap-6 ">
           <Link
             href="/"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             About Us
           </Link>
@@ -40,13 +38,13 @@ export function NavBar() {
 
           <Link
             href="/gallery"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             Gallery
           </Link>
           <Link
             href="/contact"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide rounded hover:bg-[#cda632]/20 transition"
           >
             Contact Us
           </Link>
