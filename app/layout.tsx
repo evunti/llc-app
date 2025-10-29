@@ -17,21 +17,6 @@ export default function RootLayout({
                 alt="Cover"
                 className="w-full object-cover object-top h-[28vh] sm:h-[48vh] md:h-[56vh]"
               />
-              <div
-                className="absolute right-3 bottom-3 sm:right-6 sm:bottom-6 bg-[#cda632]/70 text-[#171717] px-2 py-1 z-50 rounded-md shadow-sm max-w-[140px] sm:max-w-[220px]"
-                style={{
-                  backdropFilter: "saturate(110%) blur(1px)",
-                  background:
-                    "linear-gradient(180deg, rgba(205,166,50,0.75), rgba(184,134,42,0.75))",
-                }}
-              >
-                <div className="font-extrabold text-[11px] sm:text-sm leading-tight">
-                  GLR Solution
-                </div>
-                <div className="text-[9px] sm:text-xs leading-tight">
-                  Leather Furniture Repair
-                </div>
-              </div>
             </div>
           </div>
           <div className="w-full">
