@@ -18,18 +18,18 @@ export default function RootLayout({
                 className="w-full object-cover object-center h-[38vh] sm:h-[48vh] md:h-[56vh]"
               />
               <div
-                className="absolute right-8 bottom-4 sm:right-10 sm:bottom-8 bg-[#cda632]/60 text-[#171717] px-2 sm:px-6 py-1 sm:py-3 z-50 rounded-md shadow-sm max-w-[220px] sm:max-w-none"
+                className="absolute right-3 bottom-3 sm:right-6 sm:bottom-6 bg-[#cda632]/70 text-[#171717] px-2 py-1 z-50 rounded-md shadow-sm max-w-[140px] sm:max-w-[220px]"
                 style={{
                   backdropFilter: "saturate(110%) blur(1px)",
                   background:
-                    "linear-gradient(180deg, rgba(205,166,50,0.6), rgba(184,134,42,0.6))",
+                    "linear-gradient(180deg, rgba(205,166,50,0.75), rgba(184,134,42,0.75))",
                 }}
               >
-                <div className="font-extrabold text-xs sm:text-lg leading-tight">
+                <div className="font-extrabold text-[11px] sm:text-sm leading-tight">
                   GLR Solution
                 </div>
-                <div className="text-[10px] sm:text-sm leading-tight">
-                  Leather Furniture Repair & Reupholstry
+                <div className="text-[9px] sm:text-xs leading-tight">
+                  Leather Furniture Repair
                 </div>
               </div>
             </div>
