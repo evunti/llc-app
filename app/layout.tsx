@@ -10,28 +10,48 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#ededed] min-h-screen w-full m-0 p-0">
         <div className="w-full flex flex-col items-center mx-auto">
-          <div className="w-full">
-            <div className="relative w-full overflow-hidden">
-              <img
-                src="/images/cover.png"
-                alt="Cover"
-                className="w-full object-cover object-top h-[28vh] sm:h-[48vh] md:h-[56vh]"
-              />
-            </div>
-          </div>
-          <div className="w-full">
-            <div className="relative w-full">
-              <img
-                src="/images/circle.png"
-                alt="Circle"
-                className="hidden sm:block absolute left-2 top-[-120px] w-[140px] h-[140px] sm:left-6 sm:top-[-260px] sm:w-[240px] sm:h-[240px] md:left-10 md:w-[320px] md:h-[320px] lg:left-14 lg:w-[400px] lg:h-[400px] z-60 pointer-events-none"
-                style={{ objectFit: "cover" }}
-              />
-              <div className="w-full">
-                <NavBar />
+          <NavBar />
+
+          <div className="w-full flex justify-center mt-2 mb-2">
+            <div className="w-full max-w-[820px] flex items-center justify-between px-4">
+              <div className="flex items-center gap-3">
+                <img
+                  src="/images/circle.png"
+                  alt="Circle"
+                  className="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] pointer-events-none"
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-2">
+                    <h1 className="text-sm sm:text-base md:text-lg font-extrabold tracking-wider text-[#171717] uppercase">
+                      Great Leather Repair
+                    </h1>
+                  </div>
+                  <div className="text-xs sm:text-sm text-gray-600">
+                    Furniture repair & reupholstery
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-right">
+                <div className="text-sm font-semibold text-gray-800">
+                  (540) 438-9283
+                </div>
+                <div className="text-sm text-gray-800">
+                  info@glrsolution.com
+                </div>
               </div>
             </div>
           </div>
+
+          <div className="relative w-full overflow-hidden">
+            <img
+              src="/images/cover.png"
+              alt="Cover"
+              className="w-full object-cover object-top h-[28vh] sm:h-[48vh] md:h-[56vh]"
+            />
+          </div>
+
           <div className="flex flex-col items-center justify-center mx-auto w-full max-w-[820px]">
             <div
               className="bg-white w-full shadow-md p-2 sm:p-4 md:p-8 min-h-[400px] mx-auto"
@@ -42,18 +62,7 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-      <div className="flex justify-center items-center py-4 mx-auto w-full max-w-[820px]">
-        <div className="w-full max-w-md text-center mx-auto">
-          <p className="text-base text-gray-800 font-semibold mb-0.5">
-            Contact Us
-          </p>
 
-          <span className="text-base text-gray-800"></span>
-          <p className="text-base text-gray-800 font-medium  ">
-            Email us at info@glrsolution.com or Call (555) 123-4567
-          </p>
-        </div>
-      </div>
       <footer className="flex justify-center items-center py-6 text-center gap-1.5 mx-auto w-full max-w-[820px]">
         &copy; {new Date().getFullYear()} LLC <p>|</p>
         <a
