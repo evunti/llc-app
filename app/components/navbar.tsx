@@ -26,17 +26,18 @@ export function NavBar() {
             Home
           </Link>
           <Link
-            href="/services"
-            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
-          >
-            Services
-          </Link>
-          <Link
             href="/about"
             className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
           >
             About Us
           </Link>
+          {/* <Link
+            href="/services"
+            className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
+          >
+            Services
+          </Link> */}
+
           <Link
             href="/gallery"
             className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
@@ -44,10 +45,10 @@ export function NavBar() {
             Gallery
           </Link>
           <Link
-            href="/testimonials"
+            href="/contact"
             className="text-[#FFF5EE] no-underline text-xs sm:text-sm font-semibold tracking-wide px-2 py-1 rounded hover:bg-[#cda632]/20 transition"
           >
-            Testimonials
+            Contact Us
           </Link>
         </div>
         {/* Mobile hamburger hidden when showing desktop links */}
